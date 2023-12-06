@@ -1,0 +1,28 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "name": "名称",
+                    "host": "URL",
+                    "username": "用户名",
+                    "password": "密码"
+                },
+                "title": "Alist"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "name": "名称",
+                    "host": "URL",
+                    "username": "用户名",
+                    "password": "密码"
+                },
+                "title": "Alist"
+            }
+        }
+    }
+}

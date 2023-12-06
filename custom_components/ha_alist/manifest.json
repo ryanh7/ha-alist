@@ -1,0 +1,10 @@
+{
+  "domain": "ha_alist",
+  "name": "Alist",
+  "documentation": "https://github.com/ryanh7/ha-alist",
+  "requirements": [],
+  "codeowners": ["@ryanh7"],
+  "config_flow": true,
+  "iot_class": "local_polling",
+  "version": "1.0.0"
+}

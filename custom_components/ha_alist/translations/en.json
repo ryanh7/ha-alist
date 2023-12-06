@@ -1,0 +1,28 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "name": "Name",
+                    "host": "Host",
+                    "username": "Username",
+                    "password": "Password"
+                },
+                "title": "Alist"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "name": "Name",
+                    "host": "Host",
+                    "username": "Username",
+                    "password": "Password"
+                },
+                "title": "Alist"
+            }
+        }
+    }
+}
