@@ -50,7 +50,7 @@ class Alist():
         
         return False
 
-    async def async_list(self, path="/") -> list:
+    async def async_list(self, path="/", auto_login=True) -> list:
         try:
             async with asyncio.timeout(10):
                 response = await self.session.post(
@@ -71,7 +71,13 @@ class Alist():
             
             response_json = await response.json()
 
-            if (code:= response_json.get("code")) != 200:
+            code = response_json.get("code")
+
+            if code == 401 and auto_login:
+                await self.async_login()
+                return await self.async_list(path, False)
+
+            if code != 200:
                 _LOGGER.error(f"Error to list dir, code:{code}")
                 return []
             

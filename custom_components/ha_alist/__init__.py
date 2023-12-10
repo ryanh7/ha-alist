@@ -6,7 +6,6 @@ from .const import DOMAIN
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
 
     alist = Alist(hass, entry.data)
-    await alist.async_login()
     
     hass.data.setdefault(DOMAIN, {})
     hass.data[DOMAIN][entry.entry_id] = alist
